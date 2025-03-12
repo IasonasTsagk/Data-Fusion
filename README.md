@@ -45,18 +45,20 @@ Compared performance against PCA-based Mid-Level Fusion.
 
 To run this project, install the required dependencies:
 
-    ```bash
+
      pip install numpy pandas scikit-learn matplotlib
 
 # 🐍 Use with Python
 
 Clone this repository:
 
-git clone https://github.com/your-repo/plastic-classification.git
-cd plastic-classification
+  
+     git clone https://github.com/your-repo/plastic-classification.git
+     cd plastic-classification
 
 Run the Mid-Level Fusion notebook:
 
-jupyter notebook mid_level_fusion.ipynb
+     jupyter notebook mid_level_fusion.ipynb
 
-Run the High-Level Fusion notebook:
+Run the High-Level Fusion notebook: 
+ 
