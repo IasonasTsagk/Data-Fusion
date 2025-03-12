@@ -19,7 +19,9 @@ Spectral Processing: The spectrum is calculated using: specktrum = sample_raw / 
 Feature Extraction:
 
 PCA applied to spectral data to reduce dimensionality while preserving variance.
+
 Combined PCA-transformed features with categorical descriptors (color, transparency).
+
 Classifier: Random Forest
 Best Model: 33 PCA Componentsm, F1-Score = 0.8177
 
@@ -39,4 +41,22 @@ Used feature embeddings extracted from an autoencoder.
 
 Compared performance against PCA-based Mid-Level Fusion.
 
-Findings: Mid-Level Fusion with PCA outperformed the embeddings approach significantly.
+🔧 Installation & Dependencies
+
+To run this project, install the required dependencies:
+
+    ```bash
+     pip install numpy pandas scikit-learn matplotlib
+
+# 🐍 Use with Python
+
+Clone this repository:
+
+git clone https://github.com/your-repo/plastic-classification.git
+cd plastic-classification
+
+Run the Mid-Level Fusion notebook:
+
+jupyter notebook mid_level_fusion.ipynb
+
+Run the High-Level Fusion notebook:
