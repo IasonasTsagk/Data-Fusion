@@ -7,6 +7,7 @@ This project applies machine learning techniques to classify plastic types based
 5: PP 
 6: PS 
 7: Other 
+
 8: Unknown (optional to include/exclude)
 
 The goal is to explore data fusion techniques to improve classification performance.
