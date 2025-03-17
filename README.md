@@ -96,7 +96,10 @@ Run the High-Level Fusion Approaches:
  
     jupyter notebook High-level-Fusion.ipynb
 
+Majority Voting:
+
     jupyter notebook "High Level - Majority Voting - Embeddings.ipynb"
+Weighted Average:
 
     jupyter notebook "High Level - Weighted Average -Embeddings.ipynb"
 
