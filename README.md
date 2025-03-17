@@ -48,15 +48,9 @@ However, it may not significantly improve recall or overall accuracy if the mode
 
 Weighted Average: Combines the predicted probabilities from each model using a weight w (found via grid search or domain knowledge):
 
-### Weighted Average
+**Weighted Average**: We compute the ensemble probability as:
 
-We combine the predicted probabilities from each model using a weight \( w \) (found via grid search or domain knowledge):
-
-\[
-P_{\text{ensemble}} = w \times P_{\text{RF}} \;+\; (1 - w) \times P_{\text{GB}}
-\]
-
-Here, \( P_{\text{RF}} \) is the probability distribution predicted by the Random Forest model, and \( P_{\text{GB}} \) is the distribution from the Gradient Boosting model. The final prediction is the class with the highest probability in \( P_{\text{ensemble}} \).
+`P_ensemble = w * P_RF + (1 - w) * P_GB`
 
 
 Leverages full probability distributions, often improving accuracy and F1 if the models’ predictions are complementary.
