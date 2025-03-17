@@ -84,3 +84,9 @@ Run the Mid-Level Fusion notebook:
 
 Run the High-Level Fusion notebook: 
  
+    jupyter notebook high_level_fusion.ipynb
+
+Embeddings Approach:
+
+    jupyter notebook embeddings_fusion.ipynb
+
