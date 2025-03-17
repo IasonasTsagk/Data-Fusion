@@ -80,7 +80,7 @@ Clone this repository:
 
 Dataset Overview:
 
-    jupyter notebook "Dataset overview.ipynb"
+    jupyter notebook  Dataset overview.ipynb
 
 
 Run the Mid-Level Fusion notebook:
@@ -98,10 +98,10 @@ Run the High-Level Fusion Approaches:
 
 Majority Voting:
 
-    jupyter notebook "High Level - Majority Voting - Embeddings.ipynb"
+    jupyter notebook  High Level - Majority Voting - Embeddings.ipynb
 Weighted Average:
 
-    jupyter notebook "High Level - Weighted Average -Embeddings.ipynb"
+    jupyter notebook  High Level - Weighted Average -Embeddings.ipynb
 
 
 
