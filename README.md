@@ -78,15 +78,29 @@ Clone this repository:
      git clone https://github.com/your-repo/plastic-classification.git
      cd plastic-classification
 
+Dataset Overview:
+
+    jupyter notebook "Dataset overview.ipynb"
+
+
 Run the Mid-Level Fusion notebook:
 
-     jupyter notebook mid_level_fusion.ipynb
-
-Run the High-Level Fusion notebook: 
- 
-    jupyter notebook high_level_fusion.ipynb
+     jupyter notebook randomforest_df.ipynb
 
 Embeddings Approach:
 
-    jupyter notebook embeddings_fusion.ipynb
+    jupyter notebook embeddings_df.ipynb
+
+
+Run the High-Level Fusion Approaches: 
+ 
+    jupyter notebook High-level-Fusion.ipynb
+
+    jupyter notebook "High Level - Majority Voting - Embeddings.ipynb"
+
+    jupyter notebook "High Level - Weighted Average -Embeddings.ipynb"
+
+
+
+
 
