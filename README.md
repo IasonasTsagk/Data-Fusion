@@ -36,18 +36,38 @@ Best Model: 33 PCA Componentsm, F1-Score = 0.8177
 2️⃣ High-Level Fusion (Model Ensemble + Bayesian Consensus)
 
 Base Models:
+Random Forest, Gradient Boosting (and/or others)
 
-Random Forest
+Fusion Techniques:
 
-Gradient Boosting
+Bayesian Consensus: Combines multiple classifiers by treating their confusion matrices as likelihood estimates and updating posterior probabilities.
 
-Fusion Technique: Bayesian Consensus to combine multiple classifiers.
+Majority Voting: Each classifier outputs a discrete class prediction, and the final prediction is the most common (mode) among them.
+This approach often boosts precision if one model tends to avoid false positives.
+However, it may not significantly improve recall or overall accuracy if the models share similar error patterns.
+
+Weighted Average: Combines the predicted probabilities from each model using a weight w (found via grid search or domain knowledge):
+
+### Weighted Average
+
+We combine the predicted probabilities from each model using a weight \( w \) (found via grid search or domain knowledge):
+
+\[
+P_{\text{ensemble}} = w \times P_{\text{RF}} \;+\; (1 - w) \times P_{\text{GB}}
+\]
+
+Here, \( P_{\text{RF}} \) is the probability distribution predicted by the Random Forest model, and \( P_{\text{GB}} \) is the distribution from the Gradient Boosting model. The final prediction is the class with the highest probability in \( P_{\text{ensemble}} \).
+
+
+Leverages full probability distributions, often improving accuracy and F1 if the models’ predictions are complementary.
+In some cases, one model may dominate if its probabilities are consistently more reliable.
 
 3️⃣ Embeddings Approach
+Method:
+Used feature embeddings extracted from an autoencoder to represent spectral and/or categorical data in a learned latent space.
 
-Used feature embeddings extracted from an autoencoder.
-
-Compared performance against PCA-based Mid-Level Fusion.
+Comparison:
+The performance of the embeddings-based approach was compared against the PCA-based mid-level fusion to assess potential gains in accuracy and F1-score.
 
 🔧 Installation & Dependencies
 
